@@ -57,3 +57,7 @@ form input{
 .attempCount {
     text-align: right;
 }
+.numberBox {
+    border-radius: 5%;
+    outline: none;
+}
