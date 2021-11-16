@@ -10,6 +10,7 @@ let num = document.getElementById("btn");
             let  NO_OF_ATTEMPTS = 10;
             noOfAttempts.innerHTML = "No of Attemps:- " + NO_OF_ATTEMPTS;
             num.addEventListener("click", (e) => {
+                if(num.value) {
                 e.preventDefault();
                 NO_OF_ATTEMPTS --;
                 noOfAttempts.innerHTML = "No of Attemps:- " + NO_OF_ATTEMPTS;
@@ -21,6 +22,7 @@ let num = document.getElementById("btn");
                 num1.value = "";
                 
                 // console.log("attemps",NO_OF_ATTEMPTS);
+                }
             });
             
             function checkNum(number) {
